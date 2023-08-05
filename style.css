@@ -1,0 +1,153 @@
+
+
+:root{
+    --laranja: hsl(25, 97%, 53%);
+    --branco:hsl(0, 0%, 100%);
+    --cinza-claro:hsl(217, 12%, 63%);
+    --cinza:hsl(216, 12%, 54%);
+    --azul-escuro:hsl(213, 19%, 18%);
+    --azul-muito-escuro:hsl(216, 12%, 8%);
+    --font-principal: 'Overpass', sans-serif;
+
+}
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-size: 15px;
+  font-family: var(--font-principal);
+  list-style: none;  
+
+}
+
+body{
+    height: 100vh;
+    position: relative;
+    background-color: var(--azul-muito-escuro);
+    
+}
+
+.container__principal{
+    width: 450px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    background-color: var(--azul-escuro);
+    padding: 2rem 3rem;
+    border-radius: 2rem;
+    display:flex ;
+    justify-content: center;
+    flex-direction: column;
+    
+}
+
+ .titulo{
+    color: var(--branco);
+    font-size: 2.5rem;
+    margin-top: 2rem;
+}
+
+.container__principal img{
+    width: 20px;
+}
+
+.texto{
+    color: var(--cinza-claro);
+    margin-top: 1rem;
+    
+    line-height: 1.5rem;
+}
+
+.rating__list{
+    display: flex;
+    justify-content: space-between;
+    margin: 2rem 0;
+    
+    
+}
+
+.number{
+    background-color: var(--cinza-claro) ;
+    padding: 1rem;
+    border-radius: 100%;
+    cursor: pointer;
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    font-weight: 600;
+    font-size: 1.2rem;
+    
+}
+
+.number:hover{
+    opacity: 1;
+    background-color: var(--branco);
+}
+
+.btn__principal{
+    width: 100%;
+    align-self: center;
+    margin: 1rem 0;
+    background-color: var(--laranja);
+    border: none;
+    border-radius: 50px;
+    padding: 10px 0;
+    font-size: 1.1rem;
+    color: var(--branco);
+    font-weight: 600;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.btn__principal:hover{
+    background-color: var(--branco);
+    color: var(--laranja);
+}
+
+.active{
+    background-color: var(--laranja);
+}
+
+.hide{
+    display: none;
+}
+
+.hidden{
+    display: none;
+}
+
+.container__thank-you{
+    width: 450px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    background-color: var(--azul-escuro);
+    padding: 2rem 3rem;
+    border-radius: 2rem;
+    text-align: center;
+    
+}
+
+.ThankYou{
+    color: var(--laranja);
+    margin-top: 1.5rem;
+    
+}
+
+@media screen and (max-width : 450px) {
+    .container__principal{
+        width: 90%;
+    }
+
+    .rating__list{
+        gap: 15px;
+    }
+
+    .container__thank-you{
+        width: 90%;
+    }
+}

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Overpass:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+
+  <title>Frontend Mentor | Interactive rating component</title>
+
+
+</head>
+
+<body>
+
+
+  <div class="container__principal">
+    <img src="./images/icon-star.svg" alt="ícone de estrela">
+
+    <h1 class="titulo">How did we do?</h1>
+
+    <p class="texto">
+      Please let us know how we did with your support request. All feedback is appreciated
+      to help us improve our offering!
+    </p>
+
+    <ul class="rating__list" id="rating">
+      <li class="number">1</li>
+      <li class="number">2</li>
+      <li class="number">3</li>
+      <li class="number">4</li>
+      <li class="number">5</li>
+
+    </ul>
+
+    <button class="btn__principal">Submit</button>
+
+  </div>
+
+  <div class="hide container__thank-you ">
+    <img src="./images/illustration-thank-you.svg" alt="agradecimento">
+
+    <div class="ThankYou">You selected <span class="nota"></span> out of 5</div>
+
+    <h2 class="titulo">Thank you!</h2>
+
+    <p class="texto">
+      We appreciate you taking the time to give a rating. If you ever need more support,
+      don’t hesitate to get in touch!
+    </p>
+
+
+    <button class="btn__principal " id="btn-voltar">Voltar</button>
+  </div>
+
+  <script src="main.js"></script>
+
+
+</body>
+
+</html>
