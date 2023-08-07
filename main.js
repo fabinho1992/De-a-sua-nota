@@ -5,6 +5,7 @@ const numeros = document.querySelectorAll('.number');
 const nota = document.querySelector('.nota');
 const btnVoltar = document.querySelector('#btn-voltar');
 
+const numeroSelecionado = null;
 
 numeros.forEach(numero => {
     numero.addEventListener('click', function () {
