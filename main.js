@@ -25,10 +25,14 @@ numeros.forEach(numero => {
 
 btn.addEventListener('click', () => {
 
-    containerThankYou.classList.toggle('hide');
-    container.classList.toggle('hide');
+    if (numeroSelecionado) {
+        containerThankYou.classList.toggle('hide');
+        container.classList.toggle('hide');
 
-    nota.innerHTML = numeroSelecionado;
+        nota.innerHTML = numeroSelecionado;
+    }else {
+        alert('Selecione um número');
+    }
 
     //window.location.href = 'thank-you.html'; UMA DAS MANEIRAS DE SE FAZER
 })
@@ -40,6 +44,7 @@ btn.addEventListener('click', () => {
         numeros.forEach(numero => {
             numero.classList.remove('active');
         })
+        numeroSelecionado = null;
     })
 
 
