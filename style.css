@@ -1,12 +1,12 @@
 
 
 :root{
-    --laranja: hsl(69, 97%, 53%);
+    --laranja: hsl(22, 97%, 53%);
     --branco:hsl(0, 0%, 100%);
     --cinza-claro:hsl(217, 12%, 63%);
     --cinza:hsl(216, 12%, 54%);
-    --azul-escuro:hsl(213, 27%, 76%);
-    --azul-muito-escuro:hsl(216, 12%, 8%);
+    --azul-escuro:hsl(180, 17%, 26%);
+    --azul-muito-escuro:hsl(0, 0%, 3%);
     --font-principal: 'Overpass', sans-serif;
 
 }
